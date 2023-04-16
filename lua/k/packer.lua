@@ -42,4 +42,6 @@ return require('packer').startup(function(use)
         }
     }
     use 'sainnhe/gruvbox-material'
+    use 'tpope/vim-surround'
+    use 'windwp/nvim-autopairs'
 end)

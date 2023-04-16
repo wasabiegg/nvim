@@ -6,9 +6,13 @@ set.encoding = "utf-8" -- default encoding
 set.fileencoding = "utf-8" -- default encoding for files
 set.ruler = true -- show a ruler
 set.hlsearch = false -- Disable highlighting of search results
+set.incsearch = true
 set.scrolloff = 5
 set.showmode = false -- Disable showing the mode
 set.hidden = true -- Hide unused buffers, required to keep multiple buffers
+set.guicursor = "" -- fat cursor
+set.updatetime = 50 -- fast update time
+set.colorcolumn = "90"
 
 -- window
 set.splitright = true -- Horizontal split will appear on the right side of the window
@@ -25,9 +29,10 @@ set.spelllang = "en_us"
 
 -- tab
 set.tabstop = 4 -- Number of spaces per tab
+set.softtabstop = 4 -- Enable soft tab
 set.shiftwidth = 4 -- Number of spaces to shift
--- set.softtabstop = true -- Enable soft tab
 set.expandtab = true -- Expand tabs to spaces
+set.smartindent = true
 
 -- colors
 set.termguicolors = true -- Enable colors in the terminal
