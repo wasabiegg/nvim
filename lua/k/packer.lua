@@ -41,8 +41,10 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},     -- Required
         }
     }
-    -- use 'sainnhe/gruvbox-material'
-    use 'rebelot/kanagawa.nvim'
+    use 'sainnhe/gruvbox-material'
+    -- use 'rebelot/kanagawa.nvim'
+    -- use 'rktjmp/lush.nvim'
+    -- use './green'
     use 'tpope/vim-surround'
     use 'windwp/nvim-autopairs'
 end)
