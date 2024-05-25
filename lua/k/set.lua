@@ -25,7 +25,7 @@ set.cursorline = true -- Enable highlighting of the current line
 set.cursorcolumn = true -- Enable highlighting of the current column
 
 -- lang
-set.spell = true
+set.spell = false
 set.spelllang = "en_us"
 
 -- tab

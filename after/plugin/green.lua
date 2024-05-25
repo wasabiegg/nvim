@@ -1,8 +1,0 @@
--- local set = vim.opt
--- 
--- if not set.termguicolors then
---     set.termguicolors = true
--- end
--- 
--- -- setup must be called before loading
--- vim.cmd("colorscheme green")

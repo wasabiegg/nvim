@@ -6,21 +6,6 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    use ({
-        'nvim-telescope/telescope.nvim', tag = '0.1.4',
-        -- or                            , branch = '0.1.x',
-        requires = { {'nvim-lua/plenary.nvim'} }
-    })
-    use ({
-        'nvim-tree/nvim-tree.lua',
-        requires = {
-            'nvim-tree/nvim-web-devicons', -- optional
-        },
-        config = function()
-            require("nvim-tree").setup {}
-        end
-    })
-    use ( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
@@ -41,11 +26,7 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},     -- Required
         }
     }
-    use {"xero/miasma.nvim"}
-    -- use 'sainnhe/gruvbox-material'
-    -- use 'rebelot/kanagawa.nvim'
-    -- use 'rktjmp/lush.nvim'
-    -- use './green'
+    use 'sainnhe/gruvbox-material'
     use 'tpope/vim-surround'
     use 'windwp/nvim-autopairs'
 end)
