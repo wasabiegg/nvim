@@ -2,6 +2,7 @@ local lsp = require('lsp-zero').preset({})
 
 lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({buffer = bufnr})
+  client.server_capabilities.semanticTokensProvider = nil
 end)
 
 -- (Optional) Configure lua language server for neovim
@@ -16,6 +17,7 @@ local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
 
 cmp.setup({
+  completion = { autocomplete = false },
   mapping = cmp.mapping.preset.insert({
     -- `Enter` key to confirm completion
     ['<CR>'] = cmp.mapping.confirm({select = false}),

@@ -18,7 +18,6 @@ vim.g.gruvbox_material_better_performance = 1
 -- Disable italic comment
 vim.g.gruvbox_material_disable_italic_comment = 1
 
--- set.colorscheme = 'gruvbox-material'
 vim.cmd [[
     syntax off
     colorscheme gruvbox-material
