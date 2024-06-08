@@ -26,6 +26,11 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},     -- Required
         }
     }
+    use {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.6',
+        requires = {{'nvim-lua/plenary.nvim'}}
+    }
     use 'sainnhe/gruvbox-material'
     use 'tpope/vim-surround'
     use 'windwp/nvim-autopairs'
