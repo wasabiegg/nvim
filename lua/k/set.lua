@@ -37,3 +37,14 @@ set.smartindent = true
 
 -- colors
 set.termguicolors = true -- Enable colors in the terminal
+
+-- file type specific
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "c",
+    command = "setlocal tabstop=8 softtabstop=8 shiftwidth=8"
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "cpp",
+    command = "setlocal tabstop=8 softtabstop=8 shiftwidth=8"
+})
